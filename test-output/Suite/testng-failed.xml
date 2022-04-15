@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="Qa123!@#"/>
+    <parameter name="userId" value="qa_tester"/>
+    <parameter name="url" value="https://utbrxuat.utilibill.com.au/utbrx/"/>
+    <classes>
+      <class name="BillRunFirst.ElectPayments">
+        <methods>
+          <include name="addManualCharges"/>
+          <include name="setExtent"/>
+          <include name="updateRatePlan"/>
+          <include name="tearDown"/>
+          <include name="addRecurringCharges"/>
+          <include name="endReport"/>
+          <include name="customer" invocation-numbers="0"/>
+          <include name="createCustElectrictyService"/>
+          <include name="makePayments"/>
+        </methods>
+      </class> <!-- BillRunFirst.ElectPayments -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
